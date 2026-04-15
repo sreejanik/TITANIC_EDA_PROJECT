@@ -1,4 +1,4 @@
-# TITANIC_EDA_PROJECT🚢 Titanic Survival Analysis (EDA Project)
+# 🚢 Titanic Survival Analysis (EDA Project)
 ## 📌 Overview
 This project performs Exploratory Data Analysis (EDA) on the Titanic dataset to identify key factors that influenced passenger survival. The analysis focuses on uncovering patterns, relationships, and hidden insights using statistical and visual techniques.
 
