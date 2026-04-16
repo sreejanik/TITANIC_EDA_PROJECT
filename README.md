@@ -1,66 +1,80 @@
-# 🚢 Titanic Survival Analysis (EDA Project)
-## 📌 Overview
-This project performs Exploratory Data Analysis (EDA) on the Titanic dataset to identify key factors that influenced passenger survival. The analysis focuses on uncovering patterns, relationships, and hidden insights using statistical and visual techniques.
+# 🚢 Titanic Survival Analysis (Exploratory Data Analysis)
+
+## 🚀 Problem Context
+
+Analyze historical passenger data to understand **which factors influenced survival outcomes** and uncover hidden patterns in structured data.
+
+---
 
 ## 🎯 Objective
-Understand the factors affecting survival
-Analyze demographic and socio-economic influences
-Identify patterns using univariate, bivariate, and multivariate analysis
 
-## 📂 Dataset
-Source: Kaggle Titanic Dataset
-Records: ~891 passengers
-Features: Demographics, ticket details, family relations
+* Identify key factors impacting survival
+* Explore relationships between demographics and outcomes
+* Demonstrate structured EDA workflow
 
-## 🛠️ Tools & Technologies
-Python (Pandas, NumPy)
-Matplotlib, Seaborn
-Jupyter Notebook
+---
 
-## 🔧 Data Preprocessing
-### Handled missing values:
-Age → Median imputation
-Embarked → Mode imputation
-Cabin → Dropped (high missing values)
-Feature Engineering:
-FamilySize (SibSp + Parch + 1)
-AgeGroup (Child, Adult, Senior, etc.)
-### Encoding:
-Label Encoding (Sex)
-One-Hot Encoding (Embarked)
+## 🛠️ Tech Stack
 
-## 📊 Key Analysis Performed
-Univariate Analysis → Distribution of features
-Bivariate Analysis → Survival vs individual features
-Multivariate Analysis → Interaction between multiple variables
+* **Python**: Pandas, NumPy
+* **Visualization**: Matplotlib, Seaborn
+
+---
+
+## ⚙️ Data Preparation
+
+* Imputed missing values (Age, Embarked)
+* Dropped high-missing feature (Cabin)
+* Engineered features:
+
+  * **Family Size**
+  * **Age Groups**
+* Encoded categorical variables
+
+---
+
+## 📊 Analysis Approach
+
+* **Univariate** → Feature distributions
+* **Bivariate** → Survival vs individual factors
+* **Multivariate** → Combined feature interactions
+
+---
 
 ## 🔍 Key Insights
-Gender is the strongest factor → Females had higher survival rates
-Class matters → 1st class > 2nd > 3rd in survival probability
-Children prioritized → Higher survival among younger passengers
-Socio-economic impact → Higher fare → better survival
-Family size effect → Medium-sized families had better outcomes
-Combined hierarchy observed →
-Women > Children > Higher Class > Others
 
-## 🧠 Key Learning
-Importance of data cleaning before analysis
-How feature interactions reveal deeper insights
-Moving from basic EDA → analytical storytelling
+* **Gender is dominant factor** → Females had significantly higher survival rates
+* **Class hierarchy matters** → 1st class passengers had highest survival probability
+* **Children prioritized** → Higher survival among younger passengers
+* **Socio-economic influence** → Higher fare correlates with survival
+* **Optimal family size effect** → Medium families had better outcomes
 
-## 📈 Project Outcome
+---
 
-This EDA reveals that survival was influenced by a combination of gender, class, and age, forming a hierarchical decision pattern rather than a single-factor dependency.
+## 💡 Key Learning
+
+* Importance of **data cleaning before analysis**
+* Value of **feature engineering in uncovering patterns**
+* Transition from **EDA → analytical storytelling**
+
+---
+
+## ⚠️ Limitations
+
+* Small dataset (~891 records)
+* No external features (weather, rescue timing, etc.)
+* No predictive modeling
+
+---
 
 ## 🚀 Future Work
-Build predictive models (Logistic Regression, Decision Trees)
-Feature importance analysis
-Model evaluation and optimization
 
-## 📎 Files Included
-Titanic_EDA.ipynb → Complete analysis
-Titanic_EDA_MDD.pdf → Detailed documentation
-README.md → Project overview
+* Build classification models (Logistic Regression, Decision Trees)
+* Feature importance analysis
+* Model evaluation
 
-## 🙌 Acknowledgment
-Dataset provided by Kaggle
+---
+
+## ✅ Conclusion
+
+This project highlights how EDA can uncover **multi-factor relationships**, forming the foundation for predictive modeling and decision-making.
